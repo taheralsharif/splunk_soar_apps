@@ -32,8 +32,7 @@ jobs:
 
       - name: Lint connector in newly added .tgz
         run: |
-          # this script will locate the .tgz and run flake8 on the connector file
-          python scripts/lint_connector.py apps/**/*.tgz
+          python scripts/lint_connector.py "apps/**/*.tgz"
 
       - name: Create Pull Request to main
         if: ${{ success() }}
