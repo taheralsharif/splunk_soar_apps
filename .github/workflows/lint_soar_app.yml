@@ -1,3 +1,5 @@
+# .github/workflows/lint_soar_app.yml
+
 name: Lint SOAR App Connector
 
 on:
@@ -10,6 +12,7 @@ on:
 jobs:
   lint-and-pr:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out soar_apps branch
         uses: actions/checkout@v3
@@ -30,7 +33,7 @@ jobs:
       - name: Lint connector in newly added .tgz
         run: |
           # this script will locate the .tgz and run flake8 on the connector file
-          python .github/scripts/lint_connector.py apps/**/*.tgz
+          python scripts/lint_connector.py apps/**/*.tgz
 
       - name: Create Pull Request to main
         if: ${{ success() }}
@@ -42,5 +45,5 @@ jobs:
           base: main
           title: 'Automated Lint Pass for ${{ github.sha }}'
           body: |
-            The connector file inside the updated .tgz has passed linting.  
+            The connector file inside the updated .tgz has passed linting.
             Merging `soar_apps` → `main`.
