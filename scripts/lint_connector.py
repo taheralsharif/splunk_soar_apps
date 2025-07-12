@@ -19,12 +19,12 @@ def find_connector_py(root_dir):
     return None
 
 def lint_connector(tgz_pattern):
-    matches = glob.glob(tgz_pattern)
+    # allow recursive ** matching
+    matches = glob.glob(tgz_pattern, recursive=True)
     if not matches:
         print(f"No .tgz files matched '{tgz_pattern}'", file=sys.stderr)
         sys.exit(1)
 
-    # if multiple, lint each
     for tgz in matches:
         print(f"→ Extracting {tgz}")
         extract_dir = os.path.join('/tmp', os.path.basename(tgz).replace('.tgz',''))
@@ -44,7 +44,7 @@ def lint_connector(tgz_pattern):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: lint_connector.py <path/to/apps/*.tgz>", file=sys.stderr)
+        print("Usage: lint_connector.py <path/to/apps/**/*.tgz>", file=sys.stderr)
         sys.exit(1)
     pattern = sys.argv[1]
     lint_connector(pattern)
