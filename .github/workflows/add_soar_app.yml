@@ -1,4 +1,4 @@
-name: Add SOAR App PR
+name: Merge SOAR-Apps → Main
 
 on:
   push:
@@ -10,33 +10,49 @@ on:
 jobs:
   open-pr:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # so we can create a PR
 
     steps:
       - name: Check out soar_apps
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0   # need full history to compare
 
       - name: Detect newest app
         id: detect
         run: |
-          # call via python to avoid permission issues
           app=$(python scripts/get_new_app.py "apps/**/*.tgz")
           echo "app_name=$app" >> $GITHUB_OUTPUT
 
-      - name: Create Pull Request into main
-        uses: peter-evans/create-pull-request@v5
+      - name: Open (or update) PR to merge into main
+        uses: actions/github-script@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # unique branch per-run
-          branch: add-${{ steps.detect.outputs.app_name }}-${{ github.run_id }}
-          base: main
-          commit-message: "chore: add SOAR app ${{ steps.detect.outputs.app_name }}"
-          title: "Add SOAR app ${{ steps.detect.outputs.app_name }}"
-          body: |
-            This PR brings the new SOAR app **${{ steps.detect.outputs.app_name }}** 
-            from the `soar_apps` branch into `main` for review and approval.
-          # only include exactly that .tgz
-          paths: |
-            apps/${{ steps.detect.outputs.app_name }}.tgz
-          delete-branch: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const app = '${{ steps.detect.outputs.app_name }}';
+            const base = 'main';
+            const head = 'soar_apps';
+
+            // First, see if a PR already exists from soar_apps → main:
+            const { data: existing } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: `${context.repo.owner}:${head}`,
+              base,
+              state: 'open'
+            });
+
+            if (existing.length) {
+              console.log(`PR already open: #${existing[0].number} ${existing[0].html_url}`);
+            } else {
+              const pr = await github.rest.pulls.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                head,
+                base,
+                title: `Add SOAR app ${app}`,
+                body: `Bringing the new SOAR app **${app}** from \`${head}\` into \`${base}\` for review/QA.`
+              });
+              console.log(`PR created: ${pr.data.html_url}`);
+            }
