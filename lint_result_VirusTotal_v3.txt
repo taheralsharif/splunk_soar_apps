@@ -1,0 +1,305 @@
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:11:80: E501 line too long (87 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:12:80: E501 line too long (95 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:13:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:42:1: F403 'from virustotalv3_consts import *' used; unable to detect undefined names
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:84:21: F405 'VIRUSTOTAL_UNKNOWN_ERROR_MSG' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:96:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:101:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:105:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:107:80: E501 line too long (93 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:116:72: F405 'VIRUSTOTAL_VALIDATE_INTEGER_MSG' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:116:80: E501 line too long (125 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:120:68: F405 'VIRUSTOTAL_VALIDATE_INTEGER_MSG' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:120:80: E501 line too long (121 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:124:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:127:80: E501 line too long (126 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:135:80: E501 line too long (123 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:144:80: E501 line too long (88 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:155:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:158:80: E501 line too long (81 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:166:80: E501 line too long (115 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:168:44: F405 'PASS_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:168:80: E501 line too long (120 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:173:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:175:80: E501 line too long (143 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:182:80: E501 line too long (143 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:189:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:196:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:202:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:226:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:230:80: E501 line too long (81 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:232:80: E501 line too long (137 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:233:80: E501 line too long (81 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:235:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:240:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:252:80: E501 line too long (103 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:268:80: E501 line too long (106 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:270:80: E501 line too long (90 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:271:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:272:80: E501 line too long (123 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:274:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:279:22: F405 'BASE_URL' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:280:28: F405 'VIRUSTOTAL_MSG_CREATED_URL' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:285:80: E501 line too long (105 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:286:80: E501 line too long (109 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:288:80: E501 line too long (105 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:290:80: E501 line too long (115 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:297:80: E501 line too long (144 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:299:80: E501 line too long (105 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:301:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:310:61: F405 'VIRUSTOTAL_SERVER_ERROR_RATE_LIMIT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:310:80: E501 line too long (135 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:315:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:325:80: E501 line too long (81 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:327:80: E501 line too long (89 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:337:80: E501 line too long (89 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:339:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:340:80: E501 line too long (117 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:342:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:347:80: E501 line too long (129 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:350:80: E501 line too long (104 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:362:80: E501 line too long (96 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:374:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:378:80: E501 line too long (137 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:382:80: E501 line too long (127 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:389:80: E501 line too long (81 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:392:80: E501 line too long (106 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:402:80: E501 line too long (95 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:429:80: E501 line too long (115 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:450:80: E501 line too long (124 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:462:80: E501 line too long (107 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:464:80: E501 line too long (90 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:473:28: F405 'VIRUSTOTAL_MSG_CONNECTIVITY' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:475:80: E501 line too long (131 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:475:84: F405 'FILE_UPLOAD_URL_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:477:32: F405 'VIRUSTOTAL_ERROR_CONNECTIVITY_TEST' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:481:77: F405 'VIRUSTOTAL_SUCCESS_CONNECTIVITY_TEST' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:481:80: E501 line too long (113 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:483:75: F405 'VIRUSTOTAL_ERROR_CONNECTIVITY_TEST' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:483:80: E501 line too long (109 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:489:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:492:21: F405 'DOMAIN_API_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:498:28: F405 'VIRUSTOTAL_MSG_CONNECTIVITY' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:500:80: E501 line too long (116 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:504:54: F405 'PASS_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:507:17: F405 'VIRUSTOTAL_SUCCESS_MSG_WITH_ERROR' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:508:80: E501 line too long (109 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:514:36: F405 'VIRUSTOTAL_ERROR_MSG_OBJECT_QUERIED' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:514:80: E501 line too long (129 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:517:80: E501 line too long (93 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:518:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:519:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:521:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:523:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:531:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:532:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:533:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:534:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:543:80: E501 line too long (89 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:553:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:557:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:559:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:566:46: F405 'FILE_REPUTATION_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:566:80: E501 line too long (108 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:571:80: E501 line too long (98 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:575:54: F405 'PASS_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:578:17: F405 'VIRUSTOTAL_SUCCESS_MSG_WITH_ERROR' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:578:80: E501 line too long (144 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:583:36: F405 'VIRUSTOTAL_ERROR_MSG_OBJECT_QUERIED' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:583:80: E501 line too long (116 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:586:80: E501 line too long (93 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:587:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:588:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:590:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:592:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:599:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:600:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:601:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:602:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:609:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:613:24: F405 'BASE_URL' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:613:34: F405 'GET_FILE_API_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:620:28: F405 'VIRUSTOTAL_MSG_CREATED_URL' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:622:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:625:80: E501 line too long (121 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:625:82: F405 'VIRUSTOTAL_SERVER_CONNECTIVITY_ERROR' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:633:80: E501 line too long (143 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:633:82: F405 'VIRUSTOTAL_SERVER_ERROR_RATE_LIMIT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:636:80: E501 line too long (142 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:636:82: F405 'VIRUSTOTAL_SERVER_ERROR_FORBIDDEN' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:639:80: E501 line too long (142 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:639:82: F405 'VIRUSTOTAL_SERVER_ERROR_NOT_FOUND' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:643:36: F405 'VIRUSTOTAL_SERVER_RETURNED_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:643:80: E501 line too long (99 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:646:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:649:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:652:21: F405 'IP_API_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:658:28: F405 'VIRUSTOTAL_MSG_CONNECTIVITY' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:660:80: E501 line too long (116 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:664:54: F405 'PASS_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:667:17: F405 'VIRUSTOTAL_SUCCESS_MSG_WITH_ERROR' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:668:80: E501 line too long (109 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:674:36: F405 'VIRUSTOTAL_ERROR_MSG_OBJECT_QUERIED' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:674:80: E501 line too long (129 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:677:80: E501 line too long (93 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:678:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:679:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:681:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:683:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:691:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:692:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:693:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:694:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:701:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:708:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:712:46: F405 'URL_REPUTATION_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:712:80: E501 line too long (123 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:717:80: E501 line too long (101 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:720:54: F405 'PASS_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:723:17: F405 'VIRUSTOTAL_SUCCESS_MSG_WITH_ERROR' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:723:80: E501 line too long (142 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:728:36: F405 'VIRUSTOTAL_ERROR_MSG_OBJECT_QUERIED' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:728:80: E501 line too long (123 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:731:80: E501 line too long (93 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:732:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:733:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:735:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:737:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:742:80: E501 line too long (97 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:745:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:746:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:747:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:748:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:756:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:761:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:767:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:769:46: F405 'URL_REPUTATION_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:769:80: E501 line too long (123 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:774:54: F405 'PASS_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:776:50: F405 'URL_API_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:776:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:784:80: E501 line too long (131 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:785:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:789:36: F405 'VIRUSTOTAL_ERROR_MSG_OBJECT_QUERIED' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:789:80: E501 line too long (123 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:792:80: E501 line too long (93 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:793:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:794:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:796:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:798:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:806:80: E501 line too long (97 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:808:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:809:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:810:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:811:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:819:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:822:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:831:80: E501 line too long (106 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:833:80: E501 line too long (117 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:841:16: F405 'VIRUSTOTAL_EXPECTED_ERROR_MSG' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:842:80: E501 line too long (141 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:844:80: E501 line too long (140 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:850:46: F405 'FILE_REPUTATION_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:850:80: E501 line too long (113 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:856:54: F405 'PASS_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:858:80: E501 line too long (98 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:861:80: E501 line too long (139 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:865:80: E501 line too long (139 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:865:92: F405 'FILE_UPLOAD_URL_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:872:80: E501 line too long (129 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:875:80: E501 line too long (131 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:880:54: F405 'FILE_REPORT_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:880:80: E501 line too long (124 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:889:80: E501 line too long (131 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:891:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:894:80: E501 line too long (102 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:900:36: F405 'VIRUSTOTAL_ERROR_MSG_OBJECT_QUERIED' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:900:80: E501 line too long (121 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:903:80: E501 line too long (93 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:904:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:905:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:907:80: E501 line too long (100 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:909:80: E501 line too long (92 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:917:80: E501 line too long (89 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:919:80: E501 line too long (91 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:923:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:924:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:925:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:926:80: E501 line too long (86 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:934:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:939:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:946:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:948:80: E501 line too long (106 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:951:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:960:80: E501 line too long (95 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:963:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:974:80: E501 line too long (103 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:985:80: E501 line too long (87 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:986:80: E501 line too long (123 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:987:80: E501 line too long (94 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:995:80: E501 line too long (139 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:999:80: E501 line too long (101 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1001:80: E501 line too long (106 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1003:80: E501 line too long (81 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1006:20: F405 'ANALYSES_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1010:80: E501 line too long (105 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1016:80: E501 line too long (115 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1020:58: F405 'PASS_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1020:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1023:21: F405 'VIRUSTOTAL_SUCCESS_MSG_WITH_ERROR' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1023:80: E501 line too long (145 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1030:80: E501 line too long (102 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1052:60: F405 'VIRUSTOTAL_MAX_POLLS_REACHED' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1052:80: E501 line too long (88 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1059:80: E501 line too long (84 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1065:46: F405 'QUOTA_ENDPOINT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1065:80: E501 line too long (115 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1071:54: F405 'PASS_ERROR_CODE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1074:17: F405 'VIRUSTOTAL_SUCCESS_MSG_WITH_ERROR' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1075:80: E501 line too long (111 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1081:36: F405 'VIRUSTOTAL_ERROR_MSG_OBJECT_QUERIED' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1081:80: E501 line too long (123 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1089:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1090:80: E501 line too long (94 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1094:80: E501 line too long (81 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1095:80: E501 line too long (95 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1100:80: E501 line too long (93 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1104:80: E501 line too long (80 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1105:80: E501 line too long (94 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1109:80: E501 line too long (81 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1110:80: E501 line too long (95 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1114:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1115:80: E501 line too long (96 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1129:80: E501 line too long (91 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1168:80: E501 line too long (107 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1171:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1175:80: E501 line too long (114 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1179:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1184:80: E501 line too long (85 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1186:80: E501 line too long (81 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1207:31: F405 'VIRUSTOTAL_JSON_APIKEY' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1210:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1212:23: F405 'VIRUSTOTAL_JSON_ENABLE_REPUTATION_CHECK' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1213:41: F405 'VIRUSTOTAL_JSON_CACHE_EXPIRATION_INTERVAL' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1213:80: E501 line too long (106 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1213:84: F405 'DEFAULT_CACHE_INTERVAL' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1214:80: E501 line too long (117 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1223:52: F405 'VIRUSTOTAL_JSON_CACHE_EXPIRATION_LENGTH' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1223:80: E501 line too long (111 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1223:93: F405 'DEFAULT_CACHE_SIZE' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1226:80: E501 line too long (95 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1227:80: E501 line too long (82 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1231:80: E501 line too long (110 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1233:75: F405 'VIRUSTOTAL_JSON_TIMEOUT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1233:80: E501 line too long (141 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1233:100: F405 'DEFAULT_TIMEOUT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1233:118: F405 'VIRUSTOTAL_JSON_TIMEOUT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1240:43: F405 'VIRUSTOTAL_JSON_RATE_LIMIT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1243:80: E501 line too long (133 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1246:80: E501 line too long (134 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1250:80: E501 line too long (128 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1272:80: E501 line too long (111 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1291:64: F405 'DEFAULT_TIMEOUT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1304:80: E501 line too long (109 > 79 characters)
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1304:94: F405 'DEFAULT_TIMEOUT' may be undefined, or defined from star imports: virustotalv3_consts
+extracted_apps/VirusTotal_v3/phVirusTotal v3/virustotalv3_connector.py:1307:80: E501 line too long (81 > 79 characters)
