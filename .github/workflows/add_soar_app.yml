@@ -13,11 +13,8 @@ jobs:
       contents: write
       pull-requests: write
 
-    env:
-      GH_TOKEN: ${{ secrets.ACTIONS_PAT }}
-
     steps:
-      - name: Checkout repository
+      - name: Checkout main branch
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -26,42 +23,43 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install flake8
+        run: |
+          pip install flake8
 
-      - name: Promote latest app
+      - name: Promote new app and lint
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TGZ_FILE=$(ls apps/*.tgz | tail -n 1)
           APP_NAME=$(basename "$TGZ_FILE" .tgz | sed 's/ /_/g')
-          BRANCH_NAME="promote_${APP_NAME}"
           EXTRACTED_DIR="extracted_apps/${APP_NAME}"
 
-          # Git config
-          git config user.email "ci@yourdomain.com"
-          git config user.name "CI Bot"
-
-          # Prepare branch
-          git fetch origin
-          git checkout -b $BRANCH_NAME origin/ready_for_prod
-
-          # Extract .tgz file
+          # Extract the app
           mkdir -p "$EXTRACTED_DIR"
           tar -xzf "$TGZ_FILE" -C "$EXTRACTED_DIR"
 
-          # Lint the connector file
+          # Lint the connector
           CONNECTOR_FILE=$(find "$EXTRACTED_DIR" -type f -name "*_connector.py" | head -n 1)
-          flake8 "$CONNECTOR_FILE" > lint_result_${APP_NAME}.txt || true
+          flake8 "$CONNECTOR_FILE" > "lint_result_${APP_NAME}.txt" || true
 
-          # Stage files
+          # Commit only the relevant files
+          git config user.email "ci@yourdomain.com"
+          git config user.name "CI Bot"
+
           git add "$TGZ_FILE"
           git add "$EXTRACTED_DIR"
           git add "lint_result_${APP_NAME}.txt"
 
           git commit -m "Promote ${APP_NAME} with lint results"
-          git push --set-upstream https://$GH_TOKEN@github.com/${{ github.repository }} $BRANCH_NAME
+          git push origin main
 
-          # Create PR to ready_for_prod
+          # Create or update PR from main to ready_for_prod
           gh pr create \
-            --title "Promote $APP_NAME to ready_for_prod" \
-            --body "Auto-generated PR for $APP_NAME" \
             --base ready_for_prod \
-            --head $BRANCH_NAME
+            --head main \
+            --title "Promote ${APP_NAME} to ready_for_prod" \
+            --body "Auto-generated PR with lint results for review" || \
+          gh pr edit \
+            --base ready_for_prod \
+            --title "Promote ${APP_NAME} to ready_for_prod" \
+            --body "Updated auto-generated PR with lint results for review"
