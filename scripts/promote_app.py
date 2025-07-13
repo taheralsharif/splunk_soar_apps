@@ -11,7 +11,7 @@ from github import InputGitAuthor
 REPO_NAME = os.getenv("GITHUB_REPOSITORY")
 BRANCH_MAIN = "main"
 BRANCH_PROD = "ready_for_prod"
-APPS_DIR = "app"
+APPS_DIR = "apps"
 EXTRACTED_DIR = "extracted_apps"
 DEST_DIR = "apps"
 TMP_DIR = "tmp_extract"
@@ -22,12 +22,12 @@ assert GITHUB_TOKEN, "Missing GitHub token"
 g = Github(GITHUB_TOKEN)
 repo = g.get_repo(REPO_NAME)
 
-# Get newly added tgz file from the latest commit
+# List the first .tgz file in apps/
 def get_new_tgz_file():
-    result = subprocess.run(["git", "diff", "--name-only", "HEAD^", "HEAD"], capture_output=True, text=True)
-    files = result.stdout.splitlines()
-    tgz_files = [f for f in files if f.startswith(f"{APPS_DIR}/") and f.endswith(".tgz")]
-    return tgz_files[0] if tgz_files else None
+    for file in os.listdir(APPS_DIR):
+        if file.endswith(".tgz"):
+            return os.path.join(APPS_DIR, file)
+    return None
 
 # Extract .tgz into tmp dir and then copy to extracted_apps/ in main
 
@@ -94,7 +94,7 @@ def create_pr(app_name, tmp_path, lint_results):
 def main():
     tgz_file = get_new_tgz_file()
     if not tgz_file:
-        print("No new .tgz file detected.")
+        print("No .tgz file found in apps/")
         return
 
     app_name, tmp_path = extract_tgz(tgz_file)
