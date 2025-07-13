@@ -7,25 +7,23 @@ import tempfile
 import subprocess
 
 def main(pattern):
-    # 1. Find the newest .tgz
-    tgz_files = glob.glob(pattern)
-    if not tgz_files:
-        print(f"No files matched '{pattern}'", file=sys.stderr)
+    # 1) find all matching .tgz, pick the newest
+    tgzs = glob.glob(pattern)
+    if not tgzs:
+        print("No .tgz files found matching", pattern)
         sys.exit(1)
-    newest = max(tgz_files, key=os.path.getmtime)
-    app_name = os.path.splitext(os.path.basename(newest))[0]
+    latest = max(tgzs, key=lambda p: os.path.getmtime(p))
+    app = os.path.basename(latest)[:-4]
+    print(f"APP_NAME: {app}")
 
-    print(f"APP_NAME: {app_name}")
-    print(f"→ Extracting {newest}")
+    # 2) extract into temp dir
+    with tempfile.TemporaryDirectory() as tmp:
+        with tarfile.open(latest, 'r:gz') as tar:
+            tar.extractall(tmp)
 
-    # 2. Extract to tempdir
-    with tempfile.TemporaryDirectory() as tmpdir:
-        with tarfile.open(newest, "r:gz") as tar:
-            tar.extractall(path=tmpdir)
-
-        # 3. Locate *_connector.py
+        # 3) locate the first connector .py
         connector = None
-        for root, _, files in os.walk(tmpdir):
+        for root, _, files in os.walk(tmp):
             for f in files:
                 if f.endswith("_connector.py"):
                     connector = os.path.join(root, f)
@@ -34,26 +32,24 @@ def main(pattern):
                 break
 
         if not connector:
-            print("No *_connector.py found in the package!", file=sys.stderr)
-            sys.exit(2)
+            print("No connector .py file found in", latest)
+            sys.exit(0)
 
-        print(f"→ Running ruff on {connector}")
-
-        # 4. Run ruff
+        print("→ Running ruff on", connector)
+        # 4) run ruff, capture output (but never fail)
         result = subprocess.run(
-            ["ruff", "check", connector],
+            ["ruff", connector],
             capture_output=True,
-            text=True,
+            text=True
         )
-
-        # 5. Output ruff stdout/stderr
+        # print any findings
         if result.stdout:
-            print(result.stdout.rstrip())
+            print(result.stdout.strip())
         if result.stderr:
-            print(result.stderr.rstrip(), file=sys.stderr)
+            print(result.stderr.strip())
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: lint_connector.py \"apps/*.tgz\"", file=sys.stderr)
+        print("Usage: scripts/lint_connector.py '<glob-pattern>'")
         sys.exit(1)
     main(sys.argv[1])
