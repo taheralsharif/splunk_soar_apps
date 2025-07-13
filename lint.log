@@ -1,1 +1,93 @@
-No .tgz files matched 'apps/**/*.tgz'
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:11:80: E501 line too long (87 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:12:80: E501 line too long (95 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:13:80: E501 line too long (92 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:30:1: F403 'from maxmind_consts import *' used; unable to detect undefined names
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:33:41: F405 'MMDB_FILE' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:36:45: F405 'MMDB_TAR_FILE' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:68:53: F405 'MAXMIND_DEFAULT_IP_CONNECTIVITY' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:68:80: E501 line too long (84 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:73:9: E722 do not use bare 'except'
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:74:80: E501 line too long (122 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:80:32: F405 'MAXMIND_MSG_DB_LOAD_FAILED' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:80:80: E501 line too long (82 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:81:55: F405 'MAXMIND_MSG_DB_LOAD_FAILED' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:81:80: E501 line too long (108 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:83:28: F405 'MAXMIND_MSG_DB_LOADED' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:88:80: E501 line too long (100 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:103:80: E501 line too long (93 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:104:80: E501 line too long (93 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:108:9: E722 do not use bare 'except'
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:109:32: F405 'MAXMIND_SUCCESS_MSG_IP_NOT_FOUND' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:109:80: E501 line too long (85 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:110:30: F405 'MAXMIND_SUCCESS_MSG_IP_NOT_FOUND' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:110:80: E501 line too long (90 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:115:28: F405 'MAXMIND_SUCCESS_MSG_IP_FOUND' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:127:80: E501 line too long (91 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:134:13: E722 do not use bare 'except'
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:135:36: F405 'MAXMIND_MSG_IP_NOT_FOUND' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:136:63: F405 'MAXMIND_ERR_IP_NOT_FOUND' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:136:80: E501 line too long (94 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:142:13: E731 do not assign a lambda expression, use a def
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:142:80: E501 line too long (84 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:145:80: E501 line too long (90 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:146:27: F405 'MAXMIND_JSON_CITY_NAME' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:147:47: F405 'MAXMIND_JSON_CITY' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:147:80: E501 line too long (89 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:151:80: E501 line too long (86 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:153:31: F405 'MAXMIND_JSON_STATE_NAME' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:154:31: F405 'MAXMIND_JSON_STATE_ISO_CODE' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:154:80: E501 line too long (81 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:155:51: F405 'MAXMIND_JSON_STATE' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:155:80: E501 line too long (92 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:157:80: E501 line too long (96 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:158:27: F405 'MAXMIND_JSON_COUNTRY_NAME' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:158:80: E501 line too long (80 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:159:47: F405 'MAXMIND_JSON_COUNTRY' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:159:80: E501 line too long (95 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:162:31: F405 'MAXMIND_JSON_COUNTRY_ISO_CODE' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:162:80: E501 line too long (92 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:164:80: E501 line too long (100 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:165:27: F405 'MAXMIND_JSON_CONTINENT_NAME' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:165:80: E501 line too long (84 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:170:31: F405 'MAXMIND_JSON_LATITUDE' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:170:80: E501 line too long (85 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:172:31: F405 'MAXMIND_JSON_LONGITUDE' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:172:80: E501 line too long (87 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:174:31: F405 'MAXMIND_JSON_TIME_ZONE' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:174:80: E501 line too long (87 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:176:80: E501 line too long (94 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:178:27: F405 'MAXMIND_JSON_POSTAL_CODE' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:182:80: E501 line too long (80 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:183:31: F405 'MAXMIND_JSON_AS_NUMBER' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:183:80: E501 line too long (100 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:184:80: E501 line too long (86 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:185:31: F405 'MAXMIND_JSON_AS_ORG' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:185:80: E501 line too long (103 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:187:31: F405 'MAXMIND_JSON_DOMAIN' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:195:80: E501 line too long (107 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:215:80: E501 line too long (89 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:222:80: E501 line too long (100 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:225:80: E501 line too long (118 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:232:80: E501 line too long (142 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:235:18: F405 'DB_DOWNLOAD_URL' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:237:43: F405 'DEFAULT_REQUEST_TIMEOUT' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:240:80: E501 line too long (127 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:271:15: F405 'DB_DOWNLOAD_URL' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:274:52: F405 'DEFAULT_REQUEST_TIMEOUT' may be undefined, or defined from star imports: maxmind_consts
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:277:80: E501 line too long (109 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:306:80: E501 line too long (98 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:319:80: E501 line too long (86 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:351:80: E501 line too long (111 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:369:80: E501 line too long (97 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:380:80: E501 line too long (80 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:383:80: E501 line too long (99 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:384:80: E501 line too long (107 > 79 characters)
+/tmp/MaxMind/phMaxMind/maxmind_connector.py:387:80: E501 line too long (81 > 79 characters)
+
+APP_NAME: MaxMind
+→ Extracting apps/MaxMind.tgz
+→ Running flake8 on /tmp/MaxMind/phMaxMind/maxmind_connector.py
+→ Running ruff on /tmp/MaxMind/phMaxMind/maxmind_connector.py
+✔ ruff passed
+→ Running GitGuardian scan on /tmp/MaxMind/phMaxMind/maxmind_connector.py
+✔ ggshield passed
