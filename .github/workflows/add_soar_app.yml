@@ -1,11 +1,7 @@
-name: Promote App to Ready for Prod
+name: Promote App
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'apps/**/*.tgz'
+  workflow_dispatch:
 
 jobs:
   promote:
@@ -19,16 +15,16 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.10
+          check-latest: false
+          update-environment: true
+          allow-prereleases: false
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install flake8 PyGithub
 
-      - name: Run promote script
+      - name: Promote App
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.name "CI Bot"
-          git config --global user.email "ci@yourdomain.com"
-          python scripts/promote_app.py
+        run: python scripts/promote_app.py
