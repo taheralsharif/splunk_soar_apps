@@ -3,82 +3,58 @@ import shutil
 import tarfile
 import subprocess
 import re
-import sys
-import tempfile
 
-
-def extract_app(tgz_path, extract_to):
-    with tarfile.open(tgz_path, "r:gz") as tar:
-        tar.extractall(path=extract_to)
-
+EXTRACTED_DIR = "extracted_apps"
+TGZ_DIR = "apps"
 
 def run_git(cmd, check=True):
     print(f"Running git command: {' '.join(cmd)}")
     subprocess.run(cmd, check=check)
 
+def extract_app(tgz_path, target_dir):
+    with tarfile.open(tgz_path, "r:gz") as tar:
+        tar.extractall(path=target_dir)
 
-def run_lint(app_path):
-    try:
-        output = subprocess.check_output(["flake8", app_path], text=True)
-        return output.strip()
-    except subprocess.CalledProcessError as e:
-        return e.output.strip()
+def promote_to_ready_for_prod(tgz_file):
+    if not os.path.exists(TGZ_DIR):
+        raise FileNotFoundError(f"Directory '{TGZ_DIR}' not found")
 
+    tgz_path = os.path.join(TGZ_DIR, tgz_file)
+    if not os.path.exists(tgz_path):
+        raise FileNotFoundError(f".tgz file not found at path: {tgz_path}")
 
-def promote_to_ready_for_prod(app_name):
-    tgz_file = f"apps/{app_name}.tgz"
-    if not os.path.exists(tgz_file):
-        print(f"❌ Error: {tgz_file} not found.")
-        sys.exit(1)
+    app_name_raw = os.path.splitext(tgz_file)[0]
+    app_name = re.sub(r"\W+", "_", app_name_raw)
 
-    # Extract and commit to `main`
-    with tempfile.TemporaryDirectory() as tmp_extract:
-        extract_app(tgz_file, tmp_extract)
+    # Copy .tgz file into apps/{app_name}/app_name.tgz
+    app_dir = os.path.join(TGZ_DIR, app_name)
+    os.makedirs(app_dir, exist_ok=True)
+    shutil.copy(tgz_path, os.path.join(app_dir, f"{app_name}.tgz"))
 
-        app_dirname = os.path.join(tmp_extract, f"ph{app_name}")
-        dest_dir = os.path.join("extracted_apps", app_name, f"ph{app_name}")
-        os.makedirs(os.path.dirname(dest_dir), exist_ok=True)
-        shutil.copytree(app_dirname, dest_dir, dirs_exist_ok=True)
+    # Extract .tgz into extracted_apps/{app_name}/ph{app_name}
+    extracted_app_dir = os.path.join(EXTRACTED_DIR, app_name, f"ph{app_name}")
+    os.makedirs(os.path.dirname(extracted_app_dir), exist_ok=True)
+    extract_app(tgz_path, extracted_app_dir)
 
-        run_git(["git", "add", dest_dir])
-        run_git(["git", "commit", "-m", f"Add extracted app '{app_name}' to extracted_apps/"])
-        run_git(["git", "push"])
+    # Set Git identity for CI/CD if not set
+    run_git(["git", "config", "--global", "user.email", "ci@yourdomain.com"])
+    run_git(["git", "config", "--global", "user.name", "CI Bot"])
 
-    # Switch to `ready_for_prod`
-    run_git(["git", "fetch", "origin"])
-    run_git(["git", "checkout", "-B", "ready_for_prod", "origin/ready_for_prod"])
+    # Git add and commit
+    run_git(["git", "add", extracted_app_dir])
+    run_git(["git", "add", app_dir])
+    run_git(["git", "commit", "-m", f"Add extracted app '{app_name_raw}' to extracted_apps/"])
 
-    # Create new promote branch
-    new_branch = f"promote/{app_name.replace(' ', '-').lower()}"
-    run_git(["git", "checkout", "-b", new_branch])
-
-    # Copy from committed content, not from tgz
-    src_dir = os.path.join("extracted_apps", app_name)
-    dst_dir = os.path.join("promoted_apps", app_name)
-    shutil.copytree(src_dir, dst_dir, dirs_exist_ok=True)
-
-    run_git(["git", "add", dst_dir])
-    run_git(["git", "commit", "-m", f"Promote app '{app_name}' to ready_for_prod"])
-    run_git(["git", "push", "-u", "origin", new_branch])
-
-    return new_branch
-
+    return app_name
 
 def main():
-    tgz_files = [f for f in os.listdir("apps") if f.endswith(".tgz")]
+    # Process all .tgz files in the apps directory root
+    tgz_files = [f for f in os.listdir(TGZ_DIR) if f.endswith(".tgz") and os.path.isfile(os.path.join(TGZ_DIR, f))]
     if not tgz_files:
-        print("❌ No .tgz files found in apps/")
-        sys.exit(1)
+        raise FileNotFoundError("No .tgz file found")
 
-    for tgz in tgz_files:
-        app_name = os.path.splitext(tgz)[0]
-        lint_results = run_lint(os.path.join("extracted_apps", app_name))
-        if lint_results:
-            print("Lint Results:\n", lint_results)
-
-        new_branch = promote_to_ready_for_prod(app_name)
-        print(f"✅ App '{app_name}' promoted on branch '{new_branch}'")
-
+    for tgz_file in tgz_files:
+        promote_to_ready_for_prod(tgz_file)
 
 if __name__ == "__main__":
     main()
