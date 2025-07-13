@@ -1,4 +1,4 @@
-name: Lint SOAR App Connector
+name: Lint & Add SOAR App
 
 on:
   push:
@@ -12,48 +12,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out soar_apps
+      - name: Check out soar_apps branch
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ github.ref }}
 
-      - name: Set up Python 3.9
+      - name: Set up Python 3.9 & install ruff
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-
-      - name: Install ruff
-        run: |
+      - run: |
           python -m pip install --upgrade pip
           pip install ruff
+        shell: bash
 
-      - name: Lint connector
+      - name: Run lint_connector.py
         id: lint
         run: |
-          chmod +x scripts/lint_connector.py
-          ./scripts/lint_connector.py "apps/*.tgz" > lint.log 2>&1 || true
-
-          # extract app name
-          APP=$(grep '^APP_NAME:' lint.log | awk '{print $2}')
-          echo "app_name=$APP" >> $GITHUB_OUTPUT
-
-          # capture full lint output
-          echo "report<<EOF" >> $GITHUB_OUTPUT
-          cat lint.log >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          python scripts/lint_connector.py "apps/*.tgz" > lint.log 2>&1 || true
+          # capture app name and raw report
+          app=$(grep '^APP_NAME:' lint.log | awk '{print $2}')
+          report=$(sed -e 's/%/%25/g' -e 's/$/%0A/' lint.log | tr -d '\n')
+          echo "app_name=$app" >> $GITHUB_OUTPUT
+          echo "report=$report" >> $GITHUB_OUTPUT
 
       - name: Create or update Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: chore(lint): report for ${{ steps.lint.outputs.app_name }}
           branch: soar_apps
           base: main
-          title: Lint report for ${{ steps.lint.outputs.app_name }}
+          title: 'Lint & Add ${{ steps.lint.outputs.app_name }}'
           body: |
             **App:** ${{ steps.lint.outputs.app_name }}
             **Ruff Lint Report**:
-            ```
+            ```text
             ${{ steps.lint.outputs.report }}
             ```
           add-paths: apps/${{ steps.lint.outputs.app_name }}.tgz
