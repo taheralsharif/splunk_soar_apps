@@ -64,7 +64,9 @@ def commit_extracted_app(app_name, tmp_path):
     subprocess.run(["git", "config", "user.email", "github-actions@github.com"], check=True)
     subprocess.run(["git", "add", EXTRACTED_DIR], check=True)
     subprocess.run(["git", "commit", "-m", f"Add extracted app {app_name} to {EXTRACTED_DIR}/"], check=True)
-    subprocess.run(["git", "push"], check=True)
+    subprocess.run(["git", "pull", "--rebase", "origin", BRANCH_MAIN], check=True)
+    subprocess.run(["git", "push", "origin", BRANCH_MAIN], check=True)
+
 
 # Create PR to ready_for_prod with app under apps/AppName/
 
