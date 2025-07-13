@@ -40,19 +40,16 @@ def promote_app():
 
     run_git(["git", "config", "--global", "user.email", "ci@yourdomain.com"])
     run_git(["git", "config", "--global", "user.name", "CI Bot"])
+    run_git(["git", "fetch", "origin"])
     run_git(["git", "checkout", "main"])
     run_git(["git", "pull"])
 
     branch_name = f"promote_{app_name}"
     run_git(["git", "checkout", "-b", branch_name])
-
     run_git(["git", "add", app_extract_path])
     run_git(["git", "add", lint_output_file])
     run_git(["git", "commit", "-m", f"Promote {app_name} with lint results"])
-
-    token = os.getenv("GITHUB_TOKEN")
-    repo_url = f"https://{token}@github.com/taheralsharif/splunk_soar_apps.git"
-    run_git(["git", "push", repo_url, branch_name])
+    run_git(["git", "push", "--set-upstream", "origin", branch_name])
 
 if __name__ == "__main__":
     promote_app()
