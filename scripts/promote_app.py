@@ -13,7 +13,6 @@ BRANCH_MAIN = "main"
 BRANCH_PROD = "ready_for_prod"
 APPS_DIR = "apps"
 EXTRACTED_DIR = "extracted_apps"
-DEST_DIR = "apps"
 TMP_DIR = "tmp_extract"
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -29,7 +28,7 @@ def get_new_tgz_file():
             return os.path.join(APPS_DIR, file)
     return None
 
-# Extract .tgz into tmp dir and then copy to extracted_apps/ in main
+# Extract .tgz into tmp dir and then copy to extracted_apps/
 
 def extract_tgz(tgz_path):
     app_name = os.path.splitext(os.path.basename(tgz_path))[0]
@@ -52,9 +51,9 @@ def run_lint(file_path):
     result = subprocess.run(["flake8", file_path], capture_output=True, text=True)
     return result.stdout.strip() or "No issues found."
 
-# Commit extracted app to extracted_apps/ in main branch
+# Commit to main: add extracted app under extracted_apps/<AppName>
 
-def commit_extracted_app(app_name, tmp_path):
+def commit_extracted_app_to_main(app_name, tmp_path):
     target_path = Path(EXTRACTED_DIR) / app_name
     if target_path.exists():
         shutil.rmtree(target_path)
@@ -62,34 +61,29 @@ def commit_extracted_app(app_name, tmp_path):
 
     subprocess.run(["git", "config", "user.name", "github-actions"], check=True)
     subprocess.run(["git", "config", "user.email", "github-actions@github.com"], check=True)
-    subprocess.run(["git", "add", EXTRACTED_DIR], check=True)
+    subprocess.run(["git", "add", str(target_path)], check=True)
     subprocess.run(["git", "commit", "-m", f"Add extracted app {app_name} to {EXTRACTED_DIR}/"], check=True)
     subprocess.run(["git", "pull", "--rebase", "origin", BRANCH_MAIN], check=True)
     subprocess.run(["git", "push", "origin", BRANCH_MAIN], check=True)
 
+# Commit to ready_for_prod: add .tgz under apps/, extracted under extracted_apps/
 
-# Create PR to ready_for_prod with app under apps/AppName/
+def promote_to_ready_for_prod(app_name, tmp_path, tgz_file, lint_results):
+    subprocess.run(["git", "fetch", "origin", BRANCH_PROD], check=True)
+    subprocess.run(["git", "checkout", BRANCH_PROD], check=True)
 
-def create_pr(app_name, tmp_path, lint_results):
-    new_branch = f"promote/{app_name.replace(' ', '-').lower()}"
+    extracted_target = Path(EXTRACTED_DIR) / app_name
+    tgz_target = Path(APPS_DIR) / Path(tgz_file).name
 
-    base = repo.get_branch(BRANCH_PROD)
-    repo.create_git_ref(ref=f"refs/heads/{new_branch}", sha=base.commit.sha)
+    if extracted_target.exists():
+        shutil.rmtree(extracted_target)
+    shutil.copytree(tmp_path, extracted_target)
 
-    dest_path = Path(DEST_DIR) / app_name
-    if dest_path.exists():
-        shutil.rmtree(dest_path)
-    shutil.copytree(tmp_path, dest_path)
+    shutil.copy2(tgz_file, tgz_target)
 
-    subprocess.run(["git", "fetch"], check=True)
-    subprocess.run(["git", "checkout", new_branch], check=True)
-    subprocess.run(["git", "add", str(dest_path)], check=True)
-    subprocess.run(["git", "commit", "-m", f"Promote {app_name} to {DEST_DIR}/"], check=True)
-    subprocess.run(["git", "push", "--set-upstream", "origin", new_branch], check=True)
-
-    title = f"Promote: {app_name} to ready_for_prod"
-    body = f"This PR promotes the {app_name} app to the production branch.\n\n**Lint Results** (`*connector*.py`):\n```\n{lint_results}\n```"
-    repo.create_pull(title=title, body=body, head=new_branch, base=BRANCH_PROD)
+    subprocess.run(["git", "add", str(extracted_target), str(tgz_target)], check=True)
+    subprocess.run(["git", "commit", "-m", f"Promote {app_name} to ready_for_prod with extracted and .tgz"], check=True)
+    subprocess.run(["git", "push", "origin", BRANCH_PROD], check=True)
 
 # Main execution
 
@@ -107,8 +101,8 @@ def main():
         return
 
     lint_output = run_lint(str(connector_file))
-    commit_extracted_app(app_name, tmp_path)
-    create_pr(app_name, tmp_path, lint_output)
+    commit_extracted_app_to_main(app_name, tmp_path)
+    promote_to_ready_for_prod(app_name, tmp_path, tgz_file, lint_output)
 
 if __name__ == "__main__":
     main()
