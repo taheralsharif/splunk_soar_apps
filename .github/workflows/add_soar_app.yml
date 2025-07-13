@@ -24,10 +24,42 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install flake8 PyGithub
+          pip install flake8
 
-      - name: Run promotion script
+      - name: Promote new app and lint
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/promote_app.py
+          TGZ_FILE=$(ls apps/*.tgz | tail -n 1)
+          APP_NAME=$(basename "$TGZ_FILE" .tgz | sed 's/ /_/g')
+          EXTRACTED_DIR="extracted_apps/${APP_NAME}"
+
+          # Extract the app
+          mkdir -p "$EXTRACTED_DIR"
+          tar -xzf "$TGZ_FILE" -C "$EXTRACTED_DIR"
+
+          # Lint the connector
+          CONNECTOR_FILE=$(find "$EXTRACTED_DIR" -type f -name "*_connector.py" | head -n 1)
+          flake8 "$CONNECTOR_FILE" > "lint_result_${APP_NAME}.txt" || true
+
+          # Commit only the relevant files
+          git config user.email "ci@yourdomain.com"
+          git config user.name "CI Bot"
+
+          git add "$TGZ_FILE"
+          git add "$EXTRACTED_DIR"
+          git add "lint_result_${APP_NAME}.txt"
+
+          git commit -m "Promote ${APP_NAME} with lint results"
+          git push origin main
+
+          # Create or update PR from main to ready_for_prod
+          gh pr create \
+            --base ready_for_prod \
+            --head main \
+            --title "Promote ${APP_NAME} to ready_for_prod" \
+            --body "Auto-generated PR with lint results for review" || \
+          gh pr edit \
+            --base ready_for_prod \
+            --title "Promote ${APP_NAME} to ready_for_prod" \
+            --body "Updated auto-generated PR with lint results for review"
