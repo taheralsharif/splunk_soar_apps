@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
-import sys
 import glob
 import os
+import sys
 
-# usage: get_new_app.py "<glob-pattern>"
-pattern = sys.argv[1] if len(sys.argv) > 1 else "apps/**/*.tgz"
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: get_new_app.py <glob_pattern>", file=sys.stderr)
+        sys.exit(1)
 
-# find all matching .tgz (recursively)
-matches = sorted(glob.glob(pattern, recursive=True))
-if not matches:
-    print(f"ERROR: no files match {pattern}", file=sys.stderr)
-    sys.exit(1)
+    pattern = sys.argv[1]
+    # find all matching tgz files, recursively
+    files = glob.glob(pattern, recursive=True)
+    if not files:
+        # nothing to do
+        sys.exit(0)
 
-# take the last one
-latest = matches[-1]
-app_name = os.path.basename(latest)[:-4]  # strip “.tgz”
+    # pick the file with the latest modification time
+    latest = max(files, key=os.path.getmtime)
+    # strip path and .tgz extension
+    name = os.path.splitext(os.path.basename(latest))[0]
+    print(name)
 
-# emit just the app name
-print(app_name)
+if __name__ == "__main__":
+    main()
