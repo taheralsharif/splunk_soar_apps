@@ -1,55 +1,41 @@
 import os
-import subprocess
 import tarfile
-import shutil
-from pathlib import Path
+import glob
+import subprocess
 
-def run_git(cmd, check=True):
-    print(f"Running git command: {' '.join(cmd)}")
-    subprocess.run(cmd, check=check)
-
-def extract_tgz(tgz_path, extract_to):
+def extract_app(tgz_path, output_dir):
+    print(f"Extracting {tgz_path} to {output_dir}")
     with tarfile.open(tgz_path, "r:gz") as tar:
-        tar.extractall(path=extract_to)
-    print(f"Extracted {tgz_path} to {extract_to}")
+        tar.extractall(output_dir)
 
-def lint_connector(connector_path, output_file):
-    print(f"Linting: {connector_path}")
-    with open(output_file, "w") as f:
-        subprocess.run(["flake8", connector_path], stdout=f, stderr=subprocess.STDOUT)
-
-def promote_app():
-    apps_dir = "apps"
-    extract_dir = "extracted_apps"
-
-    latest_tgz = max(Path(apps_dir).glob("*.tgz"), key=lambda p: p.stat().st_mtime)
-    app_file = latest_tgz.name
-    app_name = app_file.replace(".tgz", "").replace(" ", "_")
-    tgz_path = os.path.join(apps_dir, app_file)
-    app_extract_path = os.path.join(extract_dir, app_name)
-
-    extract_tgz(tgz_path, app_extract_path)
-
-    connector_files = list(Path(app_extract_path).rglob("*_connector.py"))
+def lint_connector(app_name, extracted_path):
+    connector_files = glob.glob(os.path.join(extracted_path, "ph*", "*_connector.py"))
     if not connector_files:
-        raise FileNotFoundError("No connector file found.")
+        print(f"No connector found in {extracted_path}")
+        return
 
-    connector_path = str(connector_files[0])
-    lint_output_file = f"lint_result_{app_name}.txt"
-    lint_connector(connector_path, lint_output_file)
+    connector_file = connector_files[0]
+    print(f"Linting: {connector_file}")
 
-    run_git(["git", "config", "--global", "user.email", "ci@yourdomain.com"])
-    run_git(["git", "config", "--global", "user.name", "CI Bot"])
-    run_git(["git", "fetch", "origin"])
-    run_git(["git", "checkout", "main"])
-    run_git(["git", "pull"])
+    result = subprocess.run(["flake8", connector_file], capture_output=True, text=True)
+    lint_output = result.stdout or "No lint issues found."
 
-    branch_name = f"promote_{app_name}"
-    run_git(["git", "checkout", "-b", branch_name])
-    run_git(["git", "add", app_extract_path])
-    run_git(["git", "add", lint_output_file])
-    run_git(["git", "commit", "-m", f"Promote {app_name} with lint results"])
-    run_git(["git", "push", "--set-upstream", "origin", branch_name])
+    lint_file = f"lint_result_{app_name}.txt"
+    with open(lint_file, "w") as f:
+        f.write(lint_output)
+
+    print(f"Lint results written to {lint_file}")
 
 if __name__ == "__main__":
-    promote_app()
+    tgz_files = glob.glob("apps/*.tgz")
+    if not tgz_files:
+        print("No .tgz app files found in apps/")
+        exit(1)
+
+    tgz_path = tgz_files[-1]
+    app_name = os.path.basename(tgz_path).replace(".tgz", "").replace(" ", "_")
+    output_dir = os.path.join("extracted_apps", app_name)
+
+    os.makedirs(output_dir, exist_ok=True)
+    extract_app(tgz_path, output_dir)
+    lint_connector(app_name, output_dir)
