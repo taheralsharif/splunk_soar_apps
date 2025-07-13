@@ -1,0 +1,41 @@
+name: Add SOAR App PR
+
+on:
+  push:
+    branches:
+      - soar_apps
+    paths:
+      - 'apps/**/*.tgz'
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out soar_apps
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Detect newest app
+        id: detect
+        run: |
+          app=$(./scripts/get_new_app.py "apps/**/*.tgz")
+          echo "app_name=$app" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request into main
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # branch name must be unique per run
+          branch: add-${{ steps.detect.outputs.app_name }}-${{ github.run_id }}
+          base: main
+          commit-message: "chore: add SOAR app ${{ steps.detect.outputs.app_name }}"
+          title: "Add SOAR app ${{ steps.detect.outputs.app_name }}"
+          body: |
+            This PR brings the new SOAR app **${{ steps.detect.outputs.app_name }}** 
+            from the `soar_apps` branch into `main` for review and approval.
+          # only include the new .tgz
+          paths: |
+            apps/${{ steps.detect.outputs.app_name }}.tgz
+          delete-branch: true
