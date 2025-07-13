@@ -22,7 +22,9 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - run: |
+
+      - name: Install ruff
+        run: |
           python -m pip install --upgrade pip
           pip install ruff
         shell: bash
@@ -31,7 +33,6 @@ jobs:
         id: lint
         run: |
           python scripts/lint_connector.py "apps/*.tgz" > lint.log 2>&1 || true
-          # capture app name and raw report
           app=$(grep '^APP_NAME:' lint.log | awk '{print $2}')
           report=$(sed -e 's/%/%25/g' -e 's/$/%0A/' lint.log | tr -d '\n')
           echo "app_name=$app" >> $GITHUB_OUTPUT
@@ -41,10 +42,10 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: chore(lint): report for ${{ steps.lint.outputs.app_name }}
+          commit-message: "chore(lint): report for ${{ steps.lint.outputs.app_name }}"
           branch: soar_apps
           base: main
-          title: 'Lint & Add ${{ steps.lint.outputs.app_name }}'
+          title: "Lint & Add ${{ steps.lint.outputs.app_name }}"
           body: |
             **App:** ${{ steps.lint.outputs.app_name }}
             **Ruff Lint Report**:
