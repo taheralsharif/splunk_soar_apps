@@ -1,4 +1,4 @@
-name: Promote and Lint Splunk SOAR App
+name: Promote SOAR App to ready_for_prod
 
 on:
   push:
@@ -14,8 +14,10 @@ jobs:
       pull-requests: write
 
     steps:
-      - name: Checkout main branch
+      - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -23,11 +25,29 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: |
-          pip install flake8 PyGithub
+        run: pip install flake8
 
-      - name: Run promotion script
+      - name: Run promote script (extract & lint)
+        run: python scripts/promote_app.py
+
+      - name: Create PR with promoted app
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.ACTIONS_PAT }}
         run: |
-          python scripts/promote_app.py
+          TGZ_FILE=$(ls apps/*.tgz | tail -n 1)
+          APP_NAME=$(basename "$TGZ_FILE" .tgz | sed 's/ /_/g')
+          BRANCH_NAME="promote_${APP_NAME}"
+
+          git config user.email "ci@yourdomain.com"
+          git config user.name "CI Bot"
+
+          git fetch origin
+          git checkout -b $BRANCH_NAME origin/ready_for_prod
+
+          cp "$TGZ_FILE" apps/
+          git add apps/
+          git add lint_result_${APP_NAME}.txt
+          git commit -m "Promote ${APP_NAME} with lint results"
+          git push https://$GH_TOKEN@github.com/${{ github.repository }} $BRANCH_NAME
+
+          gh pr create --base ready_for_prod --head $BRANCH_NAME --title "Promote $APP_NAME to ready_for_prod" --body "Auto-generated PR for $APP_NAME"
