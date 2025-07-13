@@ -1,0 +1,45 @@
+# .github/workflows/open-soar-pr.yml
+name: Open SOAR App PR
+
+on:
+  push:
+    branches:
+      - soar_apps
+
+# 👇 grant the token permission to create PRs
+permissions:
+  contents: write       # needed if you ever push commits
+  pull-requests: write  # needed to call github.rest.pulls.create
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out soar_apps
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: soar_apps
+
+      - name: Get new app name
+        id: get_app
+        run: |
+          app=$(python scripts/get_new_app.py "apps/**/*.tgz")
+          echo "app_name=$app" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const app = '${{ steps.get_app.outputs.app_name }}';
+            await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: 'soar_apps',
+              base: 'main',
+              title: `Add SOAR app ${app}`,
+              body: `Bringing the new SOAR app **${app}** from \`soar_apps\` into \`main\` for review.
+              `.trim()
+            });
