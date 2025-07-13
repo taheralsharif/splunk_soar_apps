@@ -20,14 +20,15 @@ jobs:
       - name: Detect newest app
         id: detect
         run: |
-          app=$(./scripts/get_new_app.py "apps/**/*.tgz")
+          # call via python to avoid permission issues
+          app=$(python scripts/get_new_app.py "apps/**/*.tgz")
           echo "app_name=$app" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request into main
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          # branch name must be unique per run
+          # unique branch per-run
           branch: add-${{ steps.detect.outputs.app_name }}-${{ github.run_id }}
           base: main
           commit-message: "chore: add SOAR app ${{ steps.detect.outputs.app_name }}"
@@ -35,7 +36,7 @@ jobs:
           body: |
             This PR brings the new SOAR app **${{ steps.detect.outputs.app_name }}** 
             from the `soar_apps` branch into `main` for review and approval.
-          # only include the new .tgz
+          # only include exactly that .tgz
           paths: |
             apps/${{ steps.detect.outputs.app_name }}.tgz
           delete-branch: true
