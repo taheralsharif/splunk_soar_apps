@@ -40,7 +40,6 @@ jobs:
               head: 'soar_apps',
               base: 'main',
               title: `Add SOAR app ${app}`,
-              body: `
-Bringing the new SOAR app **${app}** from \`soar_apps\` into \`main\` for review.
+              body: `Bringing the new SOAR app **${app}** from \`soar_apps\` into \`main\` for review.
               `.trim()
             });
