@@ -61,7 +61,7 @@ def commit_extracted_app_to_main(app_name, tmp_path):
 
     subprocess.run(["git", "config", "user.name", "github-actions"], check=True)
     subprocess.run(["git", "config", "user.email", "github-actions@github.com"], check=True)
-    subprocess.run(["git", "add", str(target_path)], check=True)
+    subprocess.run(["git", "add", str(target_path) + "/."], check=True)
     subprocess.run(["git", "commit", "-m", f"Add extracted app {app_name} to {EXTRACTED_DIR}/"], check=True)
     subprocess.run(["git", "pull", "--rebase", "origin", BRANCH_MAIN], check=True)
     subprocess.run(["git", "push", "origin", BRANCH_MAIN], check=True)
