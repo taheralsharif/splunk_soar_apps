@@ -1,4 +1,4 @@
-name: Promote SOAR App to ready_for_prod
+name: Promote and Lint Splunk SOAR App
 
 on:
   push:
@@ -13,11 +13,12 @@ jobs:
       contents: write
       pull-requests: write
 
+    env:
+      GH_TOKEN: ${{ secrets.ACTIONS_PAT }}
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,27 +28,40 @@ jobs:
       - name: Install dependencies
         run: pip install flake8
 
-      - name: Run promote script (extract & lint)
-        run: python scripts/promote_app.py
-
-      - name: Create PR with promoted app
-        env:
-          GH_TOKEN: ${{ secrets.ACTIONS_PAT }}
+      - name: Promote latest app
         run: |
           TGZ_FILE=$(ls apps/*.tgz | tail -n 1)
           APP_NAME=$(basename "$TGZ_FILE" .tgz | sed 's/ /_/g')
           BRANCH_NAME="promote_${APP_NAME}"
+          EXTRACTED_DIR="extracted_apps/${APP_NAME}"
 
+          # Git config
           git config user.email "ci@yourdomain.com"
           git config user.name "CI Bot"
 
+          # Prepare branch
           git fetch origin
           git checkout -b $BRANCH_NAME origin/ready_for_prod
 
-          cp "$TGZ_FILE" apps/
-          git add apps/
-          git add lint_result_${APP_NAME}.txt
-          git commit -m "Promote ${APP_NAME} with lint results"
-          git push https://$GH_TOKEN@github.com/${{ github.repository }} $BRANCH_NAME
+          # Extract .tgz file
+          mkdir -p "$EXTRACTED_DIR"
+          tar -xzf "$TGZ_FILE" -C "$EXTRACTED_DIR"
 
-          gh pr create --base ready_for_prod --head $BRANCH_NAME --title "Promote $APP_NAME to ready_for_prod" --body "Auto-generated PR for $APP_NAME"
+          # Lint the connector file
+          CONNECTOR_FILE=$(find "$EXTRACTED_DIR" -type f -name "*_connector.py" | head -n 1)
+          flake8 "$CONNECTOR_FILE" > lint_result_${APP_NAME}.txt || true
+
+          # Stage files
+          git add "$TGZ_FILE"
+          git add "$EXTRACTED_DIR"
+          git add "lint_result_${APP_NAME}.txt"
+
+          git commit -m "Promote ${APP_NAME} with lint results"
+          git push --set-upstream https://$GH_TOKEN@github.com/${{ github.repository }} $BRANCH_NAME
+
+          # Create PR to ready_for_prod
+          gh pr create \
+            --title "Promote $APP_NAME to ready_for_prod" \
+            --body "Auto-generated PR for $APP_NAME" \
+            --base ready_for_prod \
+            --head $BRANCH_NAME
