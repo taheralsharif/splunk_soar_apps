@@ -5,11 +5,15 @@ on:
   push:
     branches:
       - soar_apps
+    paths:
+      - 'apps/**/*.tgz'
+    # don’t retrigger on just the extracted folder commit
+    paths-ignore:
+      - 'extracted_app_file/**'
 
-# 👇 grant the token permission to create PRs
 permissions:
-  contents: write       # needed if you ever push commits
-  pull-requests: write  # needed to call github.rest.pulls.create
+  contents: write       # allow checkout + commits
+  pull-requests: write  # allow creating PRs
 
 jobs:
   open-pr:
@@ -19,27 +23,53 @@ jobs:
       - name: Check out soar_apps
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
           ref: soar_apps
+          fetch-depth: 0
 
       - name: Get new app name
         id: get_app
         run: |
-          app=$(python scripts/get_new_app.py "apps/**/*.tgz")
-          echo "app_name=$app" >> $GITHUB_OUTPUT
+          echo "app=$(./scripts/get_new_app.py 'apps/**/*.tgz')" >> $GITHUB_OUTPUT
+
+      - name: Extract new app
+        run: |
+          mkdir -p extracted_app_file/${{ steps.get_app.outputs.app }}
+          tar xzf apps/${{ steps.get_app.outputs.app }}.tgz \
+            -C extracted_app_file/${{ steps.get_app.outputs.app }}
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add extracted_app_file/${{ steps.get_app.outputs.app }}
+          git commit -m "Extract ${{ steps.get_app.outputs.app }} into extracted_app_file"
+          git push origin soar_apps
+
+      - name: Lint connector file for secrets
+        id: lint
+        run: |
+          file=$(find extracted_app_file/${{ steps.get_app.outputs.app }} \
+                   -type f -name "*connector*.py" | head -n1)
+          if [[ -n "$file" ]]; then
+            issues=$(grep -En "apikey|api_key|password|secret|token" "$file" || true)
+          else
+            issues="No connector file found."
+          fi
+          # escape newlines
+          report="${issues//$'\n'/%0A}"
+          echo "report=$report" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
-        uses: actions/github-script@v6
+        uses: peter-evans/create-pull-request@v5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const app = '${{ steps.get_app.outputs.app_name }}';
-            await github.rest.pulls.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              head: 'soar_apps',
-              base: 'main',
-              title: `Add SOAR app ${app}`,
-              body: `Bringing the new SOAR app **${app}** from \`soar_apps\` into \`main\` for review.
-              `.trim()
-            });
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: soar_apps
+          base: main
+          commit-message: "chore: add SOAR app ${{ steps.get_app.outputs.app }}"
+          title: Add SOAR app ${{ steps.get_app.outputs.app }}
+          body: |
+            **App:** ${{ steps.get_app.outputs.app }}
+            **Lint report for connector**:
+            ```text
+            ${{ steps.lint.outputs.report }}
+            ```
+          # only include the new .tgz in the PR
+          add-paths: apps/${{ steps.get_app.outputs.app }}.tgz
+          delete-branch: true
