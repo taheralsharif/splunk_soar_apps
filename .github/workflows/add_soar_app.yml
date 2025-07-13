@@ -1,4 +1,4 @@
-# .github/workflows/open-soar-pr.yml
+# .github/workflows/add_soar_app.yml
 name: Open SOAR App PR
 
 on:
@@ -7,9 +7,6 @@ on:
       - soar_apps
     paths:
       - 'apps/**/*.tgz'
-    # don’t retrigger on just the extracted folder commit
-    paths-ignore:
-      - 'apps_extracted/**'
 
 permissions:
   contents: write         # allow checkout + commits
@@ -46,17 +43,13 @@ jobs:
       - name: Lint connector file for secrets
         id: lint
         run: |
-          # find the connector .py
           file=$(find apps_extracted/${{ steps.get_app.outputs.app }} \
-                  -type f -name "*connector*.py" | head -n1)
-
+                   -type f -name "*connector*.py" | head -n1)
           if [[ -n "$file" ]]; then
             issues=$(grep -En "apikey|api_key|password|secret|token" "$file" || true)
           else
             issues="No connector file found."
           fi
-
-          # escape newlines for output
           report="${issues//$'\n'/%0A}"
           echo "report=$report" >> $GITHUB_OUTPUT
 
@@ -67,15 +60,13 @@ jobs:
           branch: soar_apps
           base: main
           commit-message: "chore: add SOAR app ${{ steps.get_app.outputs.app }}"
-          title: Add SOAR app ${{ steps.get_app.outputs.app }}
+          title: "Add SOAR app ${{ steps.get_app.outputs.app }}"
           body: |
             **App:** ${{ steps.get_app.outputs.app }}
-
             **Lint report for connector**:
             ```text
             ${{ steps.lint.outputs.report }}
             ```
-          # only include the new tgz in the PR
           add-paths: |
             apps/${{ steps.get_app.outputs.app }}.tgz
           delete-branch: true
