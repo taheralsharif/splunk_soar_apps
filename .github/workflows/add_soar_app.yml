@@ -1,32 +1,35 @@
-name: Promote and Lint Splunk SOAR App
+name: Promote App to Ready for Prod
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
-      - 'apps/*.tgz'
+      - 'apps/**/*.tgz'
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
-  promote:
+  promote_app:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
 
     steps:
-      - name: Checkout main branch
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: 3.10
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install flake8 PyGithub
 
-      - name: Run promotion script
+      - name: Run promote_app script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
