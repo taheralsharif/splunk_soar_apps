@@ -1,0 +1,535 @@
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:11:80: E501 line too long (87 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:12:80: E501 line too long (95 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:13:80: E501 line too long (92 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:23:1: E722 do not use bare 'except'
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:41:1: F403 'from servicenow_consts import *' used; unable to detect undefined names
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:97:26: F405 'SERVICENOW_ENCRYPT_TOKEN' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:97:80: E501 line too long (82 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:105:26: F405 'SERVICENOW_DECRYPT_TOKEN' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:105:80: E501 line too long (82 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:116:80: E501 line too long (80 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:117:80: E501 line too long (81 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:120:33: F405 'SERVICENOW_JSON_DEVICE_URL' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:125:53: F405 'SERVICENOW_DEFAULT_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:125:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:130:80: E501 line too long (135 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:130:98: F405 'DEFAULT_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:137:80: E501 line too long (117 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:139:66: E203 whitespace before ':'
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:146:38: F405 'SERVICENOW_JSON_CLIENT_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:149:46: F405 'SERVICENOW_JSON_CLIENT_SECRET' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:155:50: F405 'SERVICENOW_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:155:80: E501 line too long (113 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:155:83: F405 'SERVICENOW_ACCESS_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:156:51: F405 'SERVICENOW_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:156:80: E501 line too long (115 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:156:84: F405 'SERVICENOW_REFRESH_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:157:32: F405 'SERVICENOW_STATE_IS_ENCRYPTED' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:160:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:162:45: F405 'SERVICENOW_DECRYPTION_ERROR' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:163:63: F405 'SERVICENOW_DECRYPTION_ERROR' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:163:80: E501 line too long (90 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:167:80: E501 line too long (96 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:169:45: F405 'SERVICENOW_DECRYPTION_ERROR' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:170:63: F405 'SERVICENOW_DECRYPTION_ERROR' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:170:80: E501 line too long (90 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:178:33: F405 'SERVICENOW_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:178:58: F405 'SERVICENOW_ACCESS_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:178:80: E501 line too long (139 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:180:41: F405 'SERVICENOW_ENCRYPTION_ERROR' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:181:59: F405 'SERVICENOW_ENCRYPTION_ERROR' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:181:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:185:33: F405 'SERVICENOW_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:185:58: F405 'SERVICENOW_REFRESH_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:185:80: E501 line too long (142 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:187:41: F405 'SERVICENOW_ENCRYPTION_ERROR' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:188:59: F405 'SERVICENOW_ENCRYPTION_ERROR' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:188:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:190:25: F405 'SERVICENOW_STATE_IS_ENCRYPTED' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:194:80: E501 line too long (82 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:196:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:205:72: F405 'SERVICENOW_VALIDATE_INTEGER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:205:80: E501 line too long (131 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:209:68: F405 'SERVICENOW_VALIDATE_INTEGER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:209:80: E501 line too long (127 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:213:80: E501 line too long (141 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:218:80: E501 line too long (131 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:225:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:230:25: F405 'SERVICENOW_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:241:34: F405 'SERVICENOW_ERROR_CODE_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:244:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:249:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:264:80: E501 line too long (104 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:274:80: E501 line too long (88 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:275:80: E501 line too long (90 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:279:80: E501 line too long (87 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:289:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:297:80: E501 line too long (131 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:306:80: E501 line too long (87 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:307:80: E501 line too long (128 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:311:80: E501 line too long (108 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:319:80: E501 line too long (88 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:329:80: E501 line too long (82 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:333:80: E501 line too long (81 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:341:80: E501 line too long (130 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:354:61: F405 'SERVICENOW_ERROR_FROM_SERVER' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:354:80: E501 line too long (136 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:361:80: E501 line too long (91 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:370:80: E501 line too long (104 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:377:80: E501 line too long (80 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:382:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:386:80: E501 line too long (81 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:388:80: E501 line too long (101 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:398:80: E501 line too long (129 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:407:61: F405 'SERVICENOW_ERROR_SERVER_CONNECTION' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:407:80: E501 line too long (142 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:413:80: E501 line too long (120 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:422:61: F405 'SERVICENOW_ERROR_SERVER_CONNECTION' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:422:80: E501 line too long (132 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:428:80: E501 line too long (118 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:441:57: F405 'SERVICENOW_ERROR_API_UNSUPPORTED_METHOD' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:441:80: E501 line too long (111 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:444:80: E501 line too long (128 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:448:61: F405 'SERVICENOW_ERROR_SERVER_CONNECTION' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:448:80: E501 line too long (132 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:455:80: E501 line too long (119 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:457:80: E501 line too long (133 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:459:80: E501 line too long (105 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:464:80: E501 line too long (107 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:467:80: E501 line too long (144 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:468:80: E501 line too long (116 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:470:80: E501 line too long (102 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:472:80: E501 line too long (115 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:474:80: E501 line too long (105 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:479:80: E501 line too long (107 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:482:80: E501 line too long (126 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:483:80: E501 line too long (116 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:496:27: F405 'SERVICENOW_JSON_USERNAME' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:496:68: F405 'SERVICENOW_JSON_PASSWORD' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:496:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:497:45: F405 'SERVICENOW_JSON_USERNAME' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:498:45: F405 'SERVICENOW_JSON_PASSWORD' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:501:75: F405 'SERVICENOW_ERROR_BASIC_AUTH_NOT_GIVEN_FIRST_TIME' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:501:80: E501 line too long (130 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:503:80: E501 line too long (87 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:505:80: E501 line too long (94 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:509:80: E501 line too long (120 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:521:80: E501 line too long (127 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:523:44: F405 'SERVICENOW_ACCESS_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:524:45: F405 'SERVICENOW_REFRESH_TOKEN_STRING' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:533:80: E501 line too long (120 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:539:80: E501 line too long (126 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:543:80: E501 line too long (80 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:545:80: E501 line too long (121 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:549:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:561:80: E501 line too long (82 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:571:27: F405 'SERVICENOW_JSON_USERNAME' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:571:68: F405 'SERVICENOW_JSON_PASSWORD' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:571:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:572:59: F405 'SERVICENOW_JSON_USERNAME' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:572:80: E501 line too long (118 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:572:93: F405 'SERVICENOW_JSON_PASSWORD' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:574:80: E501 line too long (102 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:584:80: E501 line too long (91 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:589:80: E501 line too long (106 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:595:80: E501 line too long (107 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:606:80: E501 line too long (102 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:608:80: E501 line too long (115 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:615:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:618:80: E501 line too long (99 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:626:28: F405 'SERVICENOW_MESSAGE_GET_INCIDENT_TEST' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:629:28: F405 'SERVICENOW_TEST_CONNECTIVITY_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:629:80: E501 line too long (115 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:638:32: F405 'SERVICENOW_ERROR_CONNECTIVITY_TEST' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:641:28: F405 'SERVICENOW_SUCCESS_CONNECTIVITY_TEST' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:642:62: F405 'SERVICENOW_SUCCESS_CONNECTIVITY_TEST' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:642:80: E501 line too long (98 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:645:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:648:27: F405 'SERVICENOW_JSON_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:648:50: F405 'SERVICENOW_DEFAULT_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:650:20: F405 'SERVICENOW_TABLE_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:652:28: F405 'SERVICENOW_JSON_FIELDS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:662:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:668:71: F405 'SERVICENOW_ERROR_FIELDS_JSON_PARSE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:668:80: E501 line too long (112 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:673:32: F405 'SERVICENOW_JSON_SHORT_DESCRIPTION' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:674:26: F405 'SERVICENOW_JSON_DESCRIPTION' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:676:51: F405 'SERVICENOW_JSON_DESCRIPTION' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:676:80: E501 line too long (92 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:677:64: F405 'SERVICENOW_ERROR_ONE_PARAM_REQ' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:677:80: E501 line too long (94 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:680:80: E501 line too long (91 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:684:66: F405 'SERVICENOW_TICKET_FOOTNOTE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:684:80: E501 line too long (120 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:686:44: F405 'SERVICENOW_JSON_DESCRIPTION' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:687:67: F405 'SERVICENOW_TICKET_FOOTNOTE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:687:80: E501 line too long (121 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:689:65: F405 'SERVICENOW_TICKET_FOOTNOTE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:689:80: E501 line too long (118 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:691:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:693:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:693:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:694:80: E501 line too long (134 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:698:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:701:64: F405 'SERVICENOW_INVALID_PARAMETER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:701:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:705:39: F405 'SERVICENOW_JSON_NEW_TICKET_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:705:80: E501 line too long (88 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:707:31: F405 'SERVICENOW_JSON_VAULT_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:709:80: E501 line too long (138 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:711:80: E501 line too long (97 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:713:80: E501 line too long (115 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:724:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:726:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:726:80: E501 line too long (99 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:733:80: E501 line too long (124 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:735:80: E501 line too long (90 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:748:80: E501 line too long (104 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:753:80: E501 line too long (88 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:755:80: E501 line too long (141 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:762:80: E501 line too long (125 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:769:80: E501 line too long (92 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:772:80: E501 line too long (103 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:789:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:793:80: E501 line too long (96 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:795:80: E501 line too long (80 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:801:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:805:31: F405 'SERVICENOW_JSON_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:805:54: F405 'SERVICENOW_DEFAULT_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:806:31: F405 'SERVICENOW_JSON_TICKET_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:809:64: F405 'SERVICENOW_INVALID_PARAMETER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:809:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:811:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:813:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:813:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:817:24: F405 'SERVICENOW_TABLE_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:818:80: E501 line too long (127 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:828:80: E501 line too long (123 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:833:68: F405 'SERVICENOW_TICKET_ID_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:833:80: E501 line too long (96 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:835:20: F405 'SERVICENOW_TICKET_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:837:28: F405 'SERVICENOW_JSON_FIELDS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:847:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:853:71: F405 'SERVICENOW_ERROR_FIELDS_JSON_PARSE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:853:80: E501 line too long (112 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:855:31: F405 'SERVICENOW_JSON_VAULT_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:857:80: E501 line too long (125 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:862:80: E501 line too long (139 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:871:80: E501 line too long (130 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:875:80: E501 line too long (112 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:877:80: E501 line too long (119 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:884:80: E501 line too long (80 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:885:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:887:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:887:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:891:24: F405 'SERVICENOW_TABLE_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:892:80: E501 line too long (127 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:908:68: F405 'SERVICENOW_TICKET_ID_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:908:80: E501 line too long (96 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:910:20: F405 'SERVICENOW_TICKET_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:912:80: E501 line too long (108 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:916:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:920:64: F405 'SERVICENOW_INVALID_PARAMETER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:920:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:928:80: E501 line too long (131 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:930:80: E501 line too long (81 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:931:80: E501 line too long (89 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:943:28: F405 'SERVICENOW_SYS_JOURNAL_FIELD_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:943:80: E501 line too long (107 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:949:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:969:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:973:36: F405 'SERVICENOW_JSON_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:973:59: F405 'SERVICENOW_DEFAULT_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:973:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:974:31: F405 'SERVICENOW_JSON_TICKET_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:977:64: F405 'SERVICENOW_INVALID_PARAMETER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:977:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:979:80: E501 line too long (101 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:985:43: F405 'SERVICENOW_JSON_GOT_TICKET_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:985:80: E501 line too long (112 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:992:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:994:57: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:994:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1001:37: F405 'SERVICENOW_DEFAULT_OFFSET' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1002:47: F405 'SERVICENOW_DEFAULT_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1005:80: E501 line too long (125 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1012:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1017:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1024:40: F405 'SERVICENOW_DEFAULT_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1027:80: E501 line too long (106 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1028:80: E501 line too long (90 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1032:80: E501 line too long (114 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1032:90: F405 'SERVICENOW_DEFAULT_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1039:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1041:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1041:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1047:28: F405 'SERVICENOW_SC_CATALOG_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1047:80: E501 line too long (108 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1054:80: E501 line too long (123 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1063:28: F405 'SERVICENOW_SC_CATEGORY_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1063:80: E501 line too long (109 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1071:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1080:80: E501 line too long (92 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1083:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1087:28: F405 'SERVICENOW_USING_BASE_URL' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1092:64: F405 'SERVICENOW_INVALID_PARAMETER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1092:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1094:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1096:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1096:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1098:20: F405 'SERVICENOW_CATALOG_ITEMS_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1100:80: E501 line too long (108 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1106:80: E501 line too long (130 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1110:80: E501 line too long (92 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1114:28: F405 'SERVICENOW_USING_BASE_URL' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1117:38: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1117:67: F405 'SERVICENOW_DEFAULT_MAX_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1117:80: E501 line too long (124 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1117:98: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1140:80: E501 line too long (136 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1147:36: F405 'SERVICENOW_SC_CAT_ITEMS_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1147:80: E501 line too long (113 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1157:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1163:80: E501 line too long (103 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1164:80: E501 line too long (114 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1181:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1185:38: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1185:67: F405 'SERVICENOW_DEFAULT_MAX_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1185:80: E501 line too long (124 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1185:98: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1190:46: F405 'SERVICENOW_SC_CATEGORY_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1190:80: E501 line too long (105 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1204:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1208:38: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1208:67: F405 'SERVICENOW_DEFAULT_MAX_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1208:80: E501 line too long (124 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1208:98: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1213:44: F405 'SERVICENOW_SC_CATALOG_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1213:80: E501 line too long (102 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1227:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1235:64: F405 'SERVICENOW_INVALID_PARAMETER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1235:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1237:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1239:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1239:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1243:24: F405 'SERVICENOW_TABLE_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1244:80: E501 line too long (127 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1256:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1261:68: F405 'SERVICENOW_TICKET_ID_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1261:80: E501 line too long (96 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1265:20: F405 'SERVICENOW_TICKET_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1266:80: E501 line too long (122 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1272:80: E501 line too long (111 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1279:80: E501 line too long (115 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1283:80: E501 line too long (96 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1286:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1289:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1291:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1291:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1295:80: E501 line too long (104 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1302:64: F405 'SERVICENOW_INVALID_PARAMETER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1302:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1313:80: E501 line too long (87 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1319:75: F405 'SERVICENOW_ERROR_VARIABLES_JSON_PARSE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1319:80: E501 line too long (119 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1321:20: F405 'SERVICENOW_CATALOG_ITEMS_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1323:80: E501 line too long (108 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1351:20: F405 'SERVICENOW_CATALOG_OREDERNOW_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1358:80: E501 line too long (134 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1366:25: F405 'SERVICENOW_API_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1367:20: F405 'SERVICENOW_TICKET_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1369:80: E501 line too long (108 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1376:80: E501 line too long (91 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1379:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1387:64: F405 'SERVICENOW_INVALID_PARAMETER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1387:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1389:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1391:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1391:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1395:24: F405 'SERVICENOW_TABLE_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1396:80: E501 line too long (127 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1408:80: E501 line too long (85 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1413:68: F405 'SERVICENOW_TICKET_ID_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1413:80: E501 line too long (96 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1416:20: F405 'SERVICENOW_TICKET_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1417:80: E501 line too long (118 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1423:80: E501 line too long (111 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1429:80: E501 line too long (111 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1438:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1441:32: F405 'SERVICENOW_JSON_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1441:55: F405 'SERVICENOW_DEFAULT_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1442:20: F405 'SERVICENOW_TABLE_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1443:54: F405 'SERVICENOW_JSON_FILTER' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1443:80: E501 line too long (81 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1446:38: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1446:67: F405 'SERVICENOW_DEFAULT_MAX_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1446:80: E501 line too long (124 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1446:98: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1451:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1453:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1453:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1455:80: E501 line too long (95 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1463:39: F405 'SERVICENOW_JSON_TOTAL_TICKETS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1463:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1468:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1470:24: F405 'SERVICENOW_JSON_SYS_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1472:20: F405 'SERVICENOW_TABLE_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1472:53: F405 'SERVICENOW_ITEM_OPT_MTOM_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1472:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1475:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1477:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1477:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1479:80: E501 line too long (131 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1485:80: E501 line too long (130 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1499:24: F405 'SERVICENOW_TICKET_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1499:58: F405 'SERVICENOW_ITEM_OPT_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1499:80: E501 line too long (102 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1500:80: E501 line too long (87 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1502:68: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1502:80: E501 line too long (97 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1504:80: E501 line too long (112 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1510:80: E501 line too long (85 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1512:40: F405 'SERVICENOW_ERROR_FETCH_VALUE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1512:80: E501 line too long (123 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1517:80: E501 line too long (88 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1523:80: E501 line too long (121 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1526:40: F405 'SERVICENOW_ERROR_FETCH_QUESTION_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1526:80: E501 line too long (129 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1529:80: E501 line too long (89 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1537:24: F405 'SERVICENOW_TICKET_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1537:58: F405 'SERVICENOW_ITEM_OPT_NEW_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1537:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1538:80: E501 line too long (87 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1540:68: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1540:80: E501 line too long (97 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1542:80: E501 line too long (112 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1548:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1551:21: F405 'SERVICENOW_ERROR_FETCH_QUESTION' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1551:80: E501 line too long (133 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1565:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1567:80: E501 line too long (91 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1571:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1573:30: F405 'SERVICENOW_JSON_QUERY_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1574:23: F405 'SERVICENOW_JSON_QUERY' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1575:23: F405 'SERVICENOW_BASE_QUERY_URI' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1577:38: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1577:67: F405 'SERVICENOW_DEFAULT_MAX_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1577:80: E501 line too long (124 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1577:98: F405 'SERVICENOW_JSON_MAX_RESULTS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1582:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1585:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1585:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1590:64: F405 'SERVICENOW_INVALID_PARAMETER_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1590:80: E501 line too long (100 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1598:28: F405 'SERVICENOW_JSON_TOTAL_TICKETS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1599:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1605:27: F405 'SERVICENOW_JSON_QUERY' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1606:15: F405 'SERVICENOW_JSON_QUERY' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1608:33: F405 'SERVICENOW_JSON_USER_ID' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1610:23: F405 'SERVICENOW_JSON_QUERY' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1610:48: F405 'SERVICENOW_JSON_SYSPARM_SYS_ID_QUERY' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1610:80: E501 line too long (99 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1612:34: F405 'SERVICENOW_JSON_USERNAME' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1614:23: F405 'SERVICENOW_JSON_QUERY' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1614:48: F405 'SERVICENOW_JSON_SYSPARM_USER_NAME_QUERY' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1614:80: E501 line too long (103 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1616:15: F405 'SERVICENOW_JSON_QUERY_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1616:46: F405 'SERVICENOW_JSON_SYS_USER_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1617:62: F405 'SERVICENOW_JSON_TOTAL_USERS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1617:80: E501 line too long (122 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1617:92: F405 'SERVICENOW_JSON_USER_PASSWORD' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1621:80: E501 line too long (91 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1622:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1624:64: F405 'SERVICENOW_AUTH_ERROR_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1624:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1626:80: E501 line too long (97 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1627:34: F405 'SERVICENOW_DEFAULT_PAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1628:35: F405 'SERVICENOW_MAX_LIMIT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1637:32: F405 'SERVICENOW_SEARCH_SOURCE_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1637:80: E501 line too long (107 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1641:80: E501 line too long (95 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1643:80: E501 line too long (85 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1644:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1646:80: E501 line too long (80 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1648:80: E501 line too long (108 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1650:80: E501 line too long (95 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1651:80: E501 line too long (94 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1659:80: E501 line too long (97 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1660:80: E501 line too long (94 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1663:80: E501 line too long (112 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1668:39: F405 'SERVICENOW_JSON_TOTAL_RECORDS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1668:80: E501 line too long (87 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1672:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1675:30: F405 'SERVICENOW_JSON_SYSPARM_TERM' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1676:40: F405 'SERVICENOW_JSON_SYSPARM_SEARCH_SOURCES' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1678:80: E501 line too long (97 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1681:80: E501 line too long (126 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1684:80: E501 line too long (99 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1692:80: E501 line too long (116 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1693:80: E501 line too long (88 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1697:80: E501 line too long (144 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1701:80: E501 line too long (103 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1704:80: E501 line too long (87 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1715:80: E501 line too long (82 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1720:80: E501 line too long (82 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1724:80: E501 line too long (98 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1725:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1732:28: F405 'SERVICENOW_USING_BASE_URL' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1747:78: F405 'SERVICENOW_DATETIME_FORMAT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1747:80: E501 line too long (104 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1752:35: F405 'SERVICENOW_JSON_ON_POLL_FILTER' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1764:80: E501 line too long (102 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1769:80: E501 line too long (112 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1774:80: E501 line too long (88 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1778:80: E501 line too long (114 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1783:80: E501 line too long (128 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1787:41: F405 'SERVICENOW_JSON_ON_POLL_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1787:72: F405 'SERVICENOW_DEFAULT_TABLE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1787:80: E501 line too long (96 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1788:20: F405 'SERVICENOW_TABLE_ENDPOINT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1789:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1793:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1797:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1801:80: E501 line too long (103 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1811:80: E501 line too long (86 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1815:80: E501 line too long (82 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1828:80: E501 line too long (117 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1830:80: E501 line too long (104 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1835:80: E501 line too long (134 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1851:80: E501 line too long (114 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1855:38: F405 'SERVICENOW_JSON_EXTRACT_IPS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1856:41: F405 'SERVICENOW_JSON_EXTRACT_HASHES' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1857:38: F405 'SERVICENOW_JSON_EXTRACT_URLS' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1862:80: E501 line too long (91 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1868:80: E501 line too long (93 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1875:80: E501 line too long (85 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1882:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1890:80: E501 line too long (112 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1895:54: F405 'SERVICENOW_DATETIME_FORMAT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1895:80: E501 line too long (80 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1898:48: F405 'SERVICENOW_DATETIME_FORMAT' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1906:64: F405 'SERVICENOW_ERROR_FAILURES' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1906:80: E501 line too long (89 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1912:80: E501 line too long (103 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1915:80: E501 line too long (84 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1916:71: F405 'SERVICENOW_SEVERITY_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1916:80: E501 line too long (115 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1921:40: F405 'SERVICENOW_SEVERITY_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1921:80: E501 line too long (123 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1928:61: F405 'SERVICENOW_SEVERITY_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1928:80: E501 line too long (144 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1942:80: E501 line too long (103 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1945:80: E501 line too long (83 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1946:71: F405 'SERVICENOW_SEVERITY_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1946:80: E501 line too long (115 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1951:40: F405 'SERVICENOW_SEVERITY_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1951:80: E501 line too long (123 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1958:61: F405 'SERVICENOW_SEVERITY_MESSAGE' may be undefined, or defined from star imports: servicenow_consts
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1958:80: E501 line too long (144 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1968:80: E501 line too long (96 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:1984:80: E501 line too long (98 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:2040:80: E501 line too long (111 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:2058:80: E501 line too long (85 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:2059:80: E501 line too long (122 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:2069:80: E501 line too long (94 > 79 characters)
+extracted_apps/ServiceNow/phServiceNow/servicenow_connector.py:2076:80: E501 line too long (100 > 79 characters)
